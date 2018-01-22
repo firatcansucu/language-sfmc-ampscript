@@ -1,0 +1,513 @@
+"*":
+  "ContentArea - Normal":
+    prefix: "@@"
+    body: "@@ContentArea"
+  Add:
+    prefix: "add"
+    body: "Add(${1:Num1},${2:Num2})"
+  additionalinfo_:
+    prefix: "s"
+    body: "additionalinfo_"
+  AddMscrmListMember:
+    prefix: "msalm"
+    body: "AddMscrmListMember(${1:GUID of record to add},${2:GUID of marketing list receiving marketing list})"
+  AddObjectArrayItem:
+    prefix: "addo"
+    body: "AddObjectArrayItem(${1:O1},${2:S1},${3:S2})"
+  AMP:
+    prefix: "amp"
+    body: '''
+      %%[
+      	$0
+      ]%%
+    '''
+  AttachFile:
+    prefix: "att"
+    body: "AttachFile(${1:S1},${2:S2},${3:S3},${4:B1},${5:S4},${6:S5},${7:N1})"
+  AttributeValue:
+    prefix: "att"
+    body: "AttributeValue(${1:Value})"
+  AuthenticatedEmployeeID:
+    prefix: "aei"
+    body: "AuthenticatedEmployeeID(${1})"
+  AuthenticatedEmployeeNotificationAddress:
+    prefix: "aena"
+    body: "AuthenticatedEmployeeNotificationAddress(${1})"
+  AuthenticatedEmployeeUserName:
+    prefix: "aeun"
+    body: "AuthenticatedEmployeeUserName(${1})"
+  AuthenticatedEnterpriseID:
+    prefix: "aeni"
+    body: "AuthenticatedEnterpriseID(${1})"
+  AuthenticatedMemberID:
+    prefix: "ami"
+    body: "AuthenticatedMemberID(${1})"
+  AuthenticatedMemberName:
+    prefix: "amn"
+    body: "AuthenticatedMemberName(${1})"
+  BeginImpressionRegion:
+    prefix: "begin"
+    body: "BeginImpressionRegion(${1:Name of impression region})"
+  BuildOptionList:
+    prefix: "bol"
+    body: '''
+      BuildOptionList(${1:Default selection},${2:Value of option},${3:Name of option})
+      
+    '''
+  BuildRowSetFromString:
+    prefix: "brsfs"
+    body: '''
+      BuildRowSetFromString(${1:String to split},${2:Split on})
+      
+    '''
+  BuildRowSetFromXML:
+    prefix: "brsfx"
+    body: '''
+      BuildRowSetFromXML(${1:XML},${2:Xpath},${3:Rowset error 0|1})
+      
+    '''
+  Comment:
+    prefix: "com"
+    body: '''
+      /* ${1:Comment goes here} */
+      $0
+    '''
+  comment_:
+    prefix: "s"
+    body: "comment_"
+  Concat:
+    prefix: "con"
+    body: "Concat(${1:String 1},${2:String 2})"
+  "ContentArea - Custom":
+    prefix: "cca"
+    body: "<custom type=\"content\" name=\"${1:Custom Name}\">"
+  ContentArea:
+    prefix: "ca"
+    body: "ContentArea(${1:ID of CA})"
+  ContentAreaByName:
+    prefix: "cabn"
+    body: "ContentAreaByName(${1:Name of CA})"
+  CreateMscrmRecord:
+    prefix: "mscr"
+    body: "CreateMscrmRecord(${1:Name of MSCRM entity},${2:Number of name/pairs},${3:Name to create},${4:Value to create})"
+  CreateObject:
+    prefix: "co"
+    body: "CreateObject(${1:S1})"
+  CreateSalesforceObject:
+    prefix: "cso"
+    body: "CreateSalesforceObject(${1:Object type},${2:Number of fields},${3:Field name},${4:Field value})"
+  DateAdd:
+    prefix: "da"
+    body: "DateAdd(${1:Date to add},${2:Integer to add},${3:Y|M|D})"
+  DateDiff:
+    prefix: "dd"
+    body: "DateDiff(${1:Date from which to subtract},${2:Date to subtract},${3:Y|M|D})"
+  DateParse:
+    prefix: "dp"
+    body: "DateParse(${1})"
+  DatePart:
+    prefix: "dp"
+    body: "DatePart(${1:Date},${2:Part to retrieve year|month|month name|day})"
+  DeleteData:
+    prefix: "deda"
+    body: "DeleteData(${1:Data Extension},${2:Column to match},${3:Value match to delete row})"
+  DeleteDE:
+    prefix: "dede"
+    body: "DeleteDE(${1:Data Extension},${2:Column to match},${3:Value match to delete row})"
+  DescribeMscrmEntities:
+    prefix: "msde"
+    body: "DescribeMscrmEntities()"
+  DescribeMscrmEntityAttributes:
+    prefix: "msdea"
+    body: "DescribeMscrmEntityAttributes(${1:Entity to retrieve attributes})"
+  DirectTwitterMessage:
+    prefix: "dtm"
+    body: "DirectTwitterMessage(${1})"
+  Divide:
+    prefix: "di"
+    body: "Divide(${1:Dividend},${2:Divisor})"
+  Domain:
+    prefix: "do"
+    body: "Domain(${1:Email address})"
+  emailaddr:
+    prefix: "s"
+    body: "emailaddr"
+  emailname_:
+    prefix: "s"
+    body: "emailname_"
+  Empty:
+    prefix: "em"
+    body: "Empty(${1:Variable to evaluate})"
+  EndImpressionRegion:
+    prefix: "eir"
+    body: "EndImpressionRegion(${1:Optional boolean})"
+  ExecuteFilter:
+    prefix: "ef"
+    body: "ExecuteFilter(${1})"
+  ExecuteFilterOrderedRows:
+    prefix: "efor"
+    body: "ExecuteFilterOrderedRows(${1})"
+  Field:
+    prefix: "fi"
+    body: "Field(${1:Row to return field},${2:Name of field to return})"
+  firstname_:
+    prefix: "s"
+    body: "firstname_"
+  FOR:
+    prefix: "for"
+    body: '''
+      FOR @${1:Variable} = ${2:Start Expression} ${3:TO|DOWNTO} ${4:End Expression} DO 
+      	$5
+      NEXT @${1:Variable}
+    '''
+  Format:
+    prefix: "fo"
+    body: "Format(${1:Variable to format},${2:Format})"
+  ftaf_url:
+    prefix: "s"
+    body: "ftaf_url"
+  fullname_:
+    prefix: "s"
+    body: "fullname_"
+  GetSocialPublishURL:
+    prefix: "gsp"
+    body: "GetSocialPublishURL(${1:Number of SN on lookup},${2:Name of CA to be shared on SN})"
+  GUID:
+    prefix: "gu"
+    body: "GUID(${1})"
+  HTTPGet:
+    prefix: "htg"
+    body: "HTTPGet(${1})"
+  HTTPRequestHeader:
+    prefix: "http"
+    body: "HTTPRequestHeader(${1:Header to be retrieved})"
+  IF:
+    prefix: "if"
+    body: '''
+      IF ${1:Condition} THEN
+      	${2:Statement}
+      ENDIF
+    '''
+  "IF...ELSEIF":
+    prefix: "elseif"
+    body: '''
+      IF ${1:Condition} THEN
+      	${2:Statement}
+      ELSEIF ${3:Condition} THEN
+      	${4:Statement}
+      ENDIF
+    '''
+  "IF...ELSEIF...ELSE":
+    prefix: "else"
+    body: '''
+      IF ${1:Condition} THEN
+      	${2:Statement}
+      ELSEIF ${3:Condition} THEN
+      	${4:Statement}
+      ELSE
+      	${5:Statement}
+      ENDIF
+    '''
+  IIf:
+    prefix: "iif"
+    body: "IIf(${1:Expression},${2:TRUE},${3:FALSE})"
+  Image:
+    prefix: "im"
+    body: "Image(${1:External Key})"
+  IndexOf:
+    prefix: "io"
+    body: "IndexOf(${1:Variable to analyze},${2:Character position})"
+  InsertData:
+    prefix: "id"
+    body: "InsertData(${1:Data Extension name},${2:Column name},${3:Value to insert})"
+  InsertDE:
+    prefix: "ide"
+    body: "InsertDE(${1:Data Extension name},${2:Column name},${3:Value to insert})"
+  InvokeCreate:
+    prefix: "ic"
+    body: "InvokeCreate(${1:API object to be created},${2:Output for status},${3:Output for error},${4:CreateOptions call})"
+  InvokeDelete:
+    prefix: "idel"
+    body: "InvokeDelete(${1:API object to be created},${2:Output for status},${3:Output for error},${4:DeleteOptions call})"
+  InvokePerform:
+    prefix: "ip"
+    body: "InvokePerform(${1:API object to be performed},${2:Action to be performed},${3:Output for status})"
+  InvokeUpdate:
+    prefix: "iu"
+    body: "InvokeUpdate(${1:API Object},${2:Status message},${3:Error code},${4:Options})"
+  IsEmailAddress:
+    prefix: "iea"
+    body: "IsEmailAddress(${1:Address to be validated})"
+  IsNull:
+    prefix: "in"
+    body: "IsNull(${1:Parameter to check for null})"
+  IsPhoneNumber:
+    prefix: "isn"
+    body: "IsPhoneNumber(${1:Phone number to be validated})"
+  jobid:
+    prefix: "s"
+    body: "jobid"
+  Length:
+    prefix: "l"
+    body: "Length(${1:Variable to count length})"
+  listid:
+    prefix: "s"
+    body: "listid"
+  listsubid:
+    prefix: "s"
+    body: "listsubid"
+  list_:
+    prefix: "s"
+    body: "list_"
+  LiveContentMicrositeURL:
+    prefix: "lcmu"
+    body: "LiveContentMicrositeURL(${1:Content type},${2:Live Content name})"
+  LocalDateToSystemDate:
+    prefix: "ldtsd"
+    body: "LocalDateToSystemDate(${1})"
+  LongSFID:
+    prefix: "lsfid"
+    body: '''
+      LongSFID(${1:15-character SFID to convert})
+      
+    '''
+  Lookup:
+    prefix: "lu"
+    body: "Lookup(\"${1:Data Extension Name}\",\"${2:Return Column}\",\"${3:Match Column}\",${4:Value to Match})"
+  LookupOrderedRows:
+    prefix: "luo"
+    body: "LookupOrderedRows(\"${1:Data Extension Name}\",${2:Number of rows to return},\"${3:Order clause asc|desc}\",\"${4:Column to match}\",${5:Value to match})"
+  LookupRows:
+    prefix: "lur"
+    body: "LookupRows(\"${1:Data Extension Name}\",\"${2:Column of rows to return}\",${3:Value to match})"
+  Lowercase:
+    prefix: "lc"
+    body: "Lowercase(${1:Value to return})"
+  MD5:
+    prefix: "md5"
+    body: "MD5(${1})"
+  member_country:
+    prefix: "s"
+    body: "member_country"
+  memberid:
+    prefix: "s"
+    body: "memberid"
+  member_postalcode:
+    prefix: "s"
+    body: "member_postalcode"
+  member_state:
+    prefix: "s"
+    body: "member_state"
+  member_addr:
+    prefix: "s"
+    body: "member_addr"
+  member_busname:
+    prefix: "s"
+    body: "member_busname"
+  member_city:
+    prefix: "s"
+    body: "member_city"
+  Mod:
+    prefix: "mo"
+    body: "Mod(${1:The dividend},${2:The divisor})"
+  Multiply:
+    prefix: "mu"
+    body: "Multiply(${1:First factor},${2:Second factor})"
+  Now:
+    prefix: "n"
+    body: "Now()"
+  Output:
+    prefix: "o"
+    body: "Output(${1:Content to be placed in block})"
+  OutputLine:
+    prefix: "ol"
+    body: "OutputLine(${1:Content to be placed in block})"
+  profile_center_url:
+    prefix: "s"
+    body: "profile_center_url"
+  ProperCase:
+    prefix: "pc"
+    body: "ProperCase(${1:String})"
+  QueryParameter:
+    prefix: "qp"
+    body: "QueryParameter(${1:Parameter to pull value})"
+  RaiseError:
+    prefix: "re"
+    body: "RaiseError(\"${1:Error message}\",${2:Stop send to subscriber true|false})"
+  Random:
+    prefix: "ran"
+    body: "Random(${1:Low integer},${2:High integer})"
+  Redirect:
+    prefix: "red"
+    body: "Redirect(${1:URL to redirect})"
+  RedirectTo:
+    prefix: "redt"
+    body: "RedirectTo(${1:URL to redirect})"
+  Replace:
+    prefix: "rep"
+    body: "Replace(${1:Variable to replace},\"${2:String to replace}\",\"${3:String to replace '$2'}\")"
+  ReplaceList:
+    prefix: "repl"
+    body: "ReplaceList(${1:Variable|string to replace},\"${2:Replacement string}\",\"${3:Value to replace'$2'}\")"
+  replyemailaddress:
+    prefix: "s"
+    body: "replyemailaddress"
+  replyname:
+    prefix: "s"
+    body: "replyname"
+  RequestParameter:
+    prefix: "rp"
+    body: "RequestParameter(${1:Parameter to request})"
+  RetrieveMscrmRecords:
+    prefix: "msrr"
+    body: "RetrieveMscrmRecords(${1:Name of MSCRM entity},${2:CSV list of record GUIDs to update},${3:Field to check value of},${4:Operator},${5:Value})"
+  RetrieveMscrmRecordsFetchXML:
+    prefix: "msrxml"
+    body: "RetrieveMscrmRecordsFetchXML(${1:XML query})"
+  RetrieveSalesforceJobSources:
+    prefix: "rsjs"
+    body: "RetrieveSalesforceJobSources(${1:ETJobID})"
+  RetrieveSalesforceObjects:
+    prefix: "rso"
+    body: "RetrieveSalesforceObjects(${1:Object type},${2:Fields to retrieve},${3:Field name for match},${4:Field value for match})"
+  Row:
+    prefix: "r"
+    body: "Row(${1:The rowset},${2:Count of row to return})"
+  RowCount:
+    prefix: "rc"
+    body: "RowCount(${1:Rowset to count})"
+  SET:
+    prefix: "se"
+    body: "SET @${1:Variable} = $0"
+  SetObjectProperty:
+    prefix: "sop"
+    body: "SetObjectProperty(${1:API Object},${2:Name of property},${3:Value of property})"
+  SetSmsConversationNextKeyword:
+    prefix: "ssms"
+    body: "SetSmsConversationNextKeyword(\"${1:Short code}\",${2:Mobile number},${3:Keyword for next conversation})"
+  SetStateMscrmRecord:
+    prefix: "msssr"
+    body: "SetStateMscrmRecord(${1:GUID of record to set},${2:MSCRM entity name},${3:State Active|Inactive},${4:Status 0|1})"
+  StringToDate:
+    prefix: "std"
+    body: "StringToDate(${1})"
+  subscriberid:
+    prefix: "s"
+    body: "subscriberid"
+  subscription_center_url:
+    prefix: "s"
+    body: "subscription_center_url"
+  Substring:
+    prefix: "ss"
+    body: "Substring(${1:String to return a portion},${2:Character to start},${3:Character to end})"
+  Subtract:
+    prefix: "su"
+    body: "Subtract(${1:Number from which to subtract N2},${2:Number to subtract from '$1'})"
+  SystemDateToLocalDate:
+    prefix: "sdtld"
+    body: "SystemDateToLocalDate(${1})"
+  TreatAsContent:
+    prefix: "tac"
+    body: "TreatAsContent(${1:String to return})"
+  Trim:
+    prefix: "t"
+    body: "Trim(${1:String to trim white space})"
+  unsub_center_url:
+    prefix: "s"
+    body: "unsub_center_url"
+  UpdateData:
+    prefix: "ud"
+    body: "UpdateData(\"${1:Data Extension name}\",${2:Number of columns},${3:Column name for WHERE},${4:Column value for WHERE},${5:Column name for INSERT},${6:Column value for INSERT})"
+  UpdateDE:
+    prefix: "ude"
+    body: "UpdateDE(\"${1:Data Extension name}\",${2:Number of columns},${3:Column name for WHERE},${4:Column value for WHERE},${5:Column name for INSERT},${6:Column value for INSERT})"
+  UpdateMscrmRecords:
+    prefix: "msup"
+    body: "UpdateMscrmRecords(${1:Name of MSCRM entity},${2:CSV list of record GUIDs to update},${3:Name to update},${4:Value to update})"
+  UpdateSingleSalesforceObject:
+    prefix: "usso"
+    body: "UpdateSingleSalesforceObject(${1:Type of object},${2:ID of object},${3:Name of field},${4:Value to update field})"
+  UpdateTwitterStatus:
+    prefix: "uts"
+    body: "UpdateTwitterStatus(${1})"
+  UpdateTwitterStatusByJob:
+    prefix: "utsbj"
+    body: "UpdateTwitterStatusByJob(${1})"
+  Uppercase:
+    prefix: "u"
+    body: "Uppercase(${1:Value to return uppercase})"
+  UpsertData:
+    prefix: "usd"
+    body: "UpsertData(\"${1:Data Extension name}\",${2:Number of columns},${3:Column name for WHERE},${4:Column value for WHERE},${5:Column name for INSERT},${6:Column value for INSERT})"
+  UpsertDE:
+    prefix: "usde"
+    body: "UpsertDE(\"${1:Data Extension name}\",${2:Number of columns},${3:Column name for WHERE},${4:Column value for WHERE},${5:Column name for INSERT},${6:Column value for INSERT})"
+  UpsertMscrmRecord:
+    prefix: "msups"
+    body: "UpsertMscrmRecord(${1:Name of MSCRM entity to upsert},${2:Field used to sort the retrieve results},${3:Order to sort ASC|DSC},${4:Number of name/value pairs},${5:Name of attribute to filter},${6:Value of attribute to filter},${7:Name of attribute to update},${8:Value of attribute to update})"
+  URLEncode:
+    prefix: "ue"
+    body: "URLEncode(${1:URL})"
+  V:
+    prefix: "v"
+    body: "V(${1:Value to ouput})"
+  view_email_url:
+    prefix: "s"
+    body: "view_email_url"
+  WAT:
+    prefix: "wat"
+    body: "WAT(${1:String to match},${2:Value to replace})"
+  WrapLongURL:
+    prefix: "wlu"
+    body: "WrapLongURL(\"${1:URL to be wrapped}\")"
+  xtday:
+    prefix: "s"
+    body: "xtday"
+  xtdayofweek:
+    prefix: "s"
+    body: "xtdayofweek"
+  xtlongdate:
+    prefix: "s"
+    body: "xtlongdate"
+  xtmonth:
+    prefix: "s"
+    body: "xtmonth"
+  xtmonthnumeric:
+    prefix: "s"
+    body: "xtmonthnumeric"
+  xtshortdate:
+    prefix: "s"
+    body: "xtshortdate"
+  xtyear:
+    prefix: "s"
+    body: "xtyear"
+  _EmailID:
+    prefix: "s"
+    body: "_EmailID"
+  _ImpressionRegionID:
+    prefix: "s"
+    body: "_ImpressionRegionID"
+  _ImpressionRegionName:
+    prefix: "s"
+    body: "_ImpressionRegionName"
+  _IsTestSend:
+    prefix: "s"
+    body: "_IsTestSend"
+  _JobSubscriberBatchID:
+    prefix: "s"
+    body: "_JobSubscriberBatchID"
+  _ListName:
+    prefix: "s"
+    body: "_ListName"
+  _messagecontext:
+    prefix: "s"
+    body: "_messagecontext"
+  _messagetypepreference:
+    prefix: "s"
+    body: "_messagetypepreference"
+  _replycontent:
+    prefix: "s"
+    body: "_replycontent"
+  _subscriberkey:
+    prefix: "s"
+    body: "_subscriberkey"

@@ -1,0 +1,138 @@
+fileTypes: [
+  "amp"
+]
+name: "AMPscript"
+patterns: [
+  {
+    begin: "/\\*"
+    captures:
+      "0":
+        name: "punctuation.definition.comment.AMP"
+    end: "\\*/"
+    name: "comment.block.AMP"
+  }
+  {
+    captures:
+      "1":
+        name: "punctuation.definition.comment.AMP"
+    match: "(//).*$\\n?"
+    name: "comment.line.double-slash.AMP"
+  }
+  {
+    match: "\\b((0(x|X)[0-9a-fA-F]+)|([0-9]+(\\.[0-9]+)?))\\b"
+    name: "constant.numeric.AMP"
+  }
+  {
+    match: "((?i:true)\\b)"
+    name: "constant.language.boolean.true.AMP"
+  }
+  {
+    match: "((?i:false)\\b)"
+    name: "constant.language.boolean.false.AMP"
+  }
+  {
+    match: "((?i:null)\\b)"
+    name: "constant.language.null.AMP"
+  }
+  {
+    match: "((?i:do|else|elseif|for|if|endif|next|then|@@ContentArea)\\b)"
+    name: "keyword.control.AMP"
+  }
+  {
+    match: "((?i:var|set)\\b)"
+    name: "storage.type.AMP"
+  }
+  {
+    match: "((?i:lookup|lookuporderedrows|lookuprows|createobject|add|addobjectarrayitem|attachfile|attributevalue|beginimpressionregion|buildoptionlist|buildrowsetfromstring|buildrowsetfromxml|concat|contentarea|contentareabyname|createsalesforceobject|dateadd|datediff|datepart|deletedata|deletede|divide|domain|empty|endimpressionregion|field|format|getsocialpublishurl|httprequestheader|httprequestheader|image|indexof|insertdata|insertde|invokecreate|invokedelete|invokeperform|invokeupdate|isemailaddress|isnull|isphonenumber|length|livecontentmicrositeurl|lowercase|mod|multiply|now|output|outputline|propcap|propercase|queryparameter|raiseerror|random|redirect|redirectto|replace|replacelist|requestparameter|retrievesalesforceobjects|row|rowcount|setobjectproperty|setsmsconversationnextkeyword|substring|subtract|treatascontent|trim|updatedata|updatede|updatesinglesalesforceobject|uppercaseupsertdata|upsertde|urlencode|v|watp|wraplongurl|updatemscrmrecords|upsertmscrmrecord|createmscrmrecord|retrievemscrmrecords|retrievemscrmrecordsfetchxml|describemscrmentities|describemscrmentityattributes|addmscrmlistmember|setstatemscrmrecord|retrievesalesforcejobsources|longsfid|updatemscrmrecord|getportfolioitem|getpublishedsocialcontent|lookuporderedrowscs|lookuprowscs|transformxml|systemdatetolocaldate|localdatetosystemdate|stringtodate|stringtohex|md5|dateparse|directtwittermessage|updatetwitterstatusbyjob|updatetwitterstatus|guid|authenticatedemployeenotificationaddress|authenticatedemployeeusername|authenticatedemployeeid|authenticatedmembername|authenticatedmemberid|authenticatedenterpriseid|executefilterorderedrows|executefilter|httpget)\\b)(?=\\()"
+    name: "support.function.AMP"
+  }
+  {
+    match: "!|%|&|\\*|\\-\\-|\\-|\\+\\+|\\+|~|===|==|=|!=|!==|<=|>=|<<=|>>=|>>>=|<>|<|>|!|&&|\\|\\||\\?\\:|\\*=|(?<!\\()/=|%=|\\+=|\\-=|&=|\\^=|\\b(and|or|not)\\b"
+    name: "keyword.operator.AMP"
+  }
+  {
+    match: "[\\%\\%\\[]|[\\]\\%\\%]|\\%\\%\\=|\\=\\%\\%"
+    name: "meta.brace.square.AMP"
+  }
+  {
+    begin: "'"
+    beginCaptures:
+      "0":
+        name: "punctuation.definition.string.begin.AMP"
+    end: "'"
+    endCaptures:
+      "0":
+        name: "punctuation.definition.string.end.AMP"
+    name: "string.quoted.single.AMP"
+    patterns: [
+      {
+        match: "\\\\(x\\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)"
+        name: "constant.character.escape.js"
+      }
+    ]
+  }
+  {
+    begin: "\""
+    beginCaptures:
+      "0":
+        name: "punctuation.definition.string.begin.AMP"
+    end: "\""
+    endCaptures:
+      "0":
+        name: "punctuation.definition.string.end.AMP"
+    name: "string.quoted.double.AMP"
+    patterns: [
+      {
+        include: "#embedded-code"
+      }
+      {
+        include: "#entities"
+      }
+    ]
+  }
+  {
+    begin: "'"
+    beginCaptures:
+      "0":
+        name: "punctuation.definition.string.begin.AMP"
+    end: "'"
+    endCaptures:
+      "0":
+        name: "punctuation.definition.string.end.AMP"
+    name: "string.quoted.single.AMP"
+    patterns: [
+      {
+        include: "#embedded-code"
+      }
+      {
+        include: "#entities"
+      }
+    ]
+  }
+  {
+    begin: "\""
+    beginCaptures:
+      "0":
+        name: "punctuation.definition.string.begin.AMP"
+    end: "\""
+    endCaptures:
+      "0":
+        name: "punctuation.definition.string.end.AMP"
+    name: "string.quoted.double.AMP"
+    patterns: [
+      {
+        match: "\\\\(x\\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)"
+        name: "constant.character.escape.AMP"
+      }
+    ]
+  }
+  {
+    match: "\\@[a-zA-Z0-9_]+"
+    name: "variable.language.AMP"
+  }
+  {
+    match: "\\b(additionalinfo_|comment_|comment|emailaddr|_EmailID|emailname_|firstname_|firstname|ftaf_url|fullname_|fullname|_ImpressionRegionID|_ImpressionRegionName|_IsTestSend|jobid|_JobSubscriberBatchID|list_|listid|_ListName|listsubid|member_addr|member_busname|member_city|member_country|memberid|member_postalcode|member_state|_messagecontext|_messagetypepreference|_replycontent|profile_center_url|replyname|replyemailaddress|subscriberid|_subscriberkey|subscription_center_url|unsub_center_url|xtday|xtdayofweek|xtlongdate|xtmonth|xtmonthnumeric|xtshortdate|xtyear|view_email_url)\\b"
+    name: "support.class.AMP"
+  }
+]
+scopeName: "source.AMP"
