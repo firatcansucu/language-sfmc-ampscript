@@ -6,13 +6,13 @@
     prefix: "add"
     body: "Add(${1:Num1},${2:Num2})"
   additionalinfo_:
-    prefix: "s"
+    prefix: "additionalinfo_"
     body: "additionalinfo_"
   AddMscrmListMember:
-    prefix: "msalm"
+    prefix: "AddMscrmListMember"
     body: "AddMscrmListMember(${1:GUID of record to add},${2:GUID of marketing list receiving marketing list})"
   AddObjectArrayItem:
-    prefix: "addo"
+    prefix: "AddObjectArrayItem"
     body: "AddObjectArrayItem(${1:O1},${2:S1},${3:S2})"
   AMP:
     prefix: "amp"
@@ -22,164 +22,167 @@
       ]%%
     '''
   AttachFile:
-    prefix: "att"
+    prefix: "AttachFile"
     body: "AttachFile(${1:S1},${2:S2},${3:S3},${4:B1},${5:S4},${6:S5},${7:N1})"
   AttributeValue:
-    prefix: "att"
+    prefix: "AttributeValue"
     body: "AttributeValue(${1:Value})"
   AuthenticatedEmployeeID:
-    prefix: "aei"
+    prefix: "AuthenticatedEmployeeID"
     body: "AuthenticatedEmployeeID(${1})"
   AuthenticatedEmployeeNotificationAddress:
-    prefix: "aena"
+    prefix: "AuthenticatedEmployeeNotificationAddress"
     body: "AuthenticatedEmployeeNotificationAddress(${1})"
   AuthenticatedEmployeeUserName:
-    prefix: "aeun"
+    prefix: "AuthenticatedEmployeeUserName"
     body: "AuthenticatedEmployeeUserName(${1})"
   AuthenticatedEnterpriseID:
-    prefix: "aeni"
+    prefix: "AuthenticatedEnterpriseID"
     body: "AuthenticatedEnterpriseID(${1})"
   AuthenticatedMemberID:
-    prefix: "ami"
+    prefix: "AuthenticatedMemberID"
     body: "AuthenticatedMemberID(${1})"
   AuthenticatedMemberName:
-    prefix: "amn"
+    prefix: "AuthenticatedMemberName"
     body: "AuthenticatedMemberName(${1})"
   BeginImpressionRegion:
-    prefix: "begin"
+    prefix: "BeginImpressionRegion"
     body: "BeginImpressionRegion(${1:Name of impression region})"
   BuildOptionList:
-    prefix: "bol"
+    prefix: "BuildOptionList"
     body: '''
       BuildOptionList(${1:Default selection},${2:Value of option},${3:Name of option})
-      
+
     '''
   BuildRowSetFromString:
-    prefix: "brsfs"
+    prefix: "BuildRowSetFromString"
     body: '''
       BuildRowSetFromString(${1:String to split},${2:Split on})
-      
+
     '''
   BuildRowSetFromXML:
-    prefix: "brsfx"
+    prefix: "BuildRowSetFromXML"
     body: '''
       BuildRowSetFromXML(${1:XML},${2:Xpath},${3:Rowset error 0|1})
-      
+
     '''
   Comment:
-    prefix: "com"
+    prefix: "Comment"
     body: '''
       /* ${1:Comment goes here} */
       $0
     '''
   comment_:
-    prefix: "s"
+    prefix: "comment_"
     body: "comment_"
   Concat:
-    prefix: "con"
+    prefix: "Concat"
     body: "Concat(${1:String 1},${2:String 2})"
   "ContentArea - Custom":
-    prefix: "cca"
+    prefix: "ContentArea - Custom"
     body: "<custom type=\"content\" name=\"${1:Custom Name}\">"
   ContentArea:
-    prefix: "ca"
+    prefix: "ContentArea"
     body: "ContentArea(${1:ID of CA})"
   ContentAreaByName:
-    prefix: "cabn"
+    prefix: "ContentAreaByName"
     body: "ContentAreaByName(${1:Name of CA})"
+  ContentBlockbyId:
+    prefix: 'ContentBlockbyId'
+    body: "ContentBlockbyId(${1:ID})"
   CreateMscrmRecord:
-    prefix: "mscr"
+    prefix: "CreateMscrmRecord"
     body: "CreateMscrmRecord(${1:Name of MSCRM entity},${2:Number of name/pairs},${3:Name to create},${4:Value to create})"
   CreateObject:
-    prefix: "co"
+    prefix: "CreateObject"
     body: "CreateObject(${1:S1})"
   CreateSalesforceObject:
-    prefix: "cso"
+    prefix: "CreateSalesforceObject"
     body: "CreateSalesforceObject(${1:Object type},${2:Number of fields},${3:Field name},${4:Field value})"
   DateAdd:
-    prefix: "da"
+    prefix: "DateAdd"
     body: "DateAdd(${1:Date to add},${2:Integer to add},${3:Y|M|D})"
   DateDiff:
-    prefix: "dd"
+    prefix: "DateDiff"
     body: "DateDiff(${1:Date from which to subtract},${2:Date to subtract},${3:Y|M|D})"
   DateParse:
-    prefix: "dp"
+    prefix: "DateParse"
     body: "DateParse(${1})"
   DatePart:
-    prefix: "dp"
+    prefix: "DatePart"
     body: "DatePart(${1:Date},${2:Part to retrieve year|month|month name|day})"
   DeleteData:
-    prefix: "deda"
+    prefix: "DeleteData"
     body: "DeleteData(${1:Data Extension},${2:Column to match},${3:Value match to delete row})"
   DeleteDE:
-    prefix: "dede"
+    prefix: "DeleteDE"
     body: "DeleteDE(${1:Data Extension},${2:Column to match},${3:Value match to delete row})"
   DescribeMscrmEntities:
-    prefix: "msde"
+    prefix: "DescribeMscrmEntities"
     body: "DescribeMscrmEntities()"
   DescribeMscrmEntityAttributes:
-    prefix: "msdea"
+    prefix: "DescribeMscrmEntityAttributes"
     body: "DescribeMscrmEntityAttributes(${1:Entity to retrieve attributes})"
   DirectTwitterMessage:
-    prefix: "dtm"
+    prefix: "DirectTwitterMessage"
     body: "DirectTwitterMessage(${1})"
   Divide:
-    prefix: "di"
+    prefix: "Divide"
     body: "Divide(${1:Dividend},${2:Divisor})"
   Domain:
-    prefix: "do"
+    prefix: "Domain"
     body: "Domain(${1:Email address})"
   emailaddr:
-    prefix: "s"
+    prefix: "emailaddr"
     body: "emailaddr"
   emailname_:
-    prefix: "s"
+    prefix: "emailname_"
     body: "emailname_"
   Empty:
-    prefix: "em"
+    prefix: "Empty"
     body: "Empty(${1:Variable to evaluate})"
   EndImpressionRegion:
-    prefix: "eir"
+    prefix: "EndImpressionRegion"
     body: "EndImpressionRegion(${1:Optional boolean})"
   ExecuteFilter:
-    prefix: "ef"
+    prefix: "ExecuteFilter"
     body: "ExecuteFilter(${1})"
   ExecuteFilterOrderedRows:
-    prefix: "efor"
+    prefix: "ExecuteFilterOrderedRows"
     body: "ExecuteFilterOrderedRows(${1})"
   Field:
-    prefix: "fi"
+    prefix: "Field"
     body: "Field(${1:Row to return field},${2:Name of field to return})"
   firstname_:
-    prefix: "s"
+    prefix: "firstname_"
     body: "firstname_"
   FOR:
-    prefix: "for"
+    prefix: "FOR"
     body: '''
-      FOR @${1:Variable} = ${2:Start Expression} ${3:TO|DOWNTO} ${4:End Expression} DO 
+      FOR @${1:Variable} = ${2:Start Expression} ${3:TO|DOWNTO} ${4:End Expression} DO
       	$5
       NEXT @${1:Variable}
     '''
   Format:
-    prefix: "fo"
+    prefix: "Format"
     body: "Format(${1:Variable to format},${2:Format})"
   ftaf_url:
-    prefix: "s"
+    prefix: "ftaf_url"
     body: "ftaf_url"
   fullname_:
-    prefix: "s"
+    prefix: "fullname_"
     body: "fullname_"
   GetSocialPublishURL:
-    prefix: "gsp"
+    prefix: "GetSocialPublishURL"
     body: "GetSocialPublishURL(${1:Number of SN on lookup},${2:Name of CA to be shared on SN})"
   GUID:
-    prefix: "gu"
+    prefix: "GUID"
     body: "GUID(${1})"
   HTTPGet:
-    prefix: "htg"
+    prefix: "HTTPGet"
     body: "HTTPGet(${1})"
   HTTPRequestHeader:
-    prefix: "http"
+    prefix: "HTTPRequestHeader"
     body: "HTTPRequestHeader(${1:Header to be retrieved})"
   IF:
     prefix: "if"
@@ -212,302 +215,302 @@
     prefix: "iif"
     body: "IIf(${1:Expression},${2:TRUE},${3:FALSE})"
   Image:
-    prefix: "im"
+    prefix: "Image"
     body: "Image(${1:External Key})"
   IndexOf:
-    prefix: "io"
+    prefix: "IndexOf"
     body: "IndexOf(${1:Variable to analyze},${2:Character position})"
   InsertData:
-    prefix: "id"
+    prefix: "InsertData"
     body: "InsertData(${1:Data Extension name},${2:Column name},${3:Value to insert})"
   InsertDE:
-    prefix: "ide"
+    prefix: "InsertDE"
     body: "InsertDE(${1:Data Extension name},${2:Column name},${3:Value to insert})"
   InvokeCreate:
-    prefix: "ic"
+    prefix: "InvokeCreate"
     body: "InvokeCreate(${1:API object to be created},${2:Output for status},${3:Output for error},${4:CreateOptions call})"
   InvokeDelete:
-    prefix: "idel"
+    prefix: "InvokeDelete"
     body: "InvokeDelete(${1:API object to be created},${2:Output for status},${3:Output for error},${4:DeleteOptions call})"
   InvokePerform:
-    prefix: "ip"
+    prefix: "InvokePerform"
     body: "InvokePerform(${1:API object to be performed},${2:Action to be performed},${3:Output for status})"
   InvokeUpdate:
-    prefix: "iu"
+    prefix: "InvokeUpdate"
     body: "InvokeUpdate(${1:API Object},${2:Status message},${3:Error code},${4:Options})"
   IsEmailAddress:
-    prefix: "iea"
+    prefix: "IsEmailAddress"
     body: "IsEmailAddress(${1:Address to be validated})"
   IsNull:
-    prefix: "in"
+    prefix: "IsNull"
     body: "IsNull(${1:Parameter to check for null})"
   IsPhoneNumber:
-    prefix: "isn"
+    prefix: "IsPhoneNumber"
     body: "IsPhoneNumber(${1:Phone number to be validated})"
   jobid:
-    prefix: "s"
+    prefix: "jobid"
     body: "jobid"
   Length:
-    prefix: "l"
+    prefix: "Length"
     body: "Length(${1:Variable to count length})"
   listid:
-    prefix: "s"
+    prefix: "listid"
     body: "listid"
   listsubid:
-    prefix: "s"
+    prefix: "listsubid"
     body: "listsubid"
   list_:
-    prefix: "s"
+    prefix: "list_"
     body: "list_"
   LiveContentMicrositeURL:
-    prefix: "lcmu"
+    prefix: "LiveContentMicrositeURL"
     body: "LiveContentMicrositeURL(${1:Content type},${2:Live Content name})"
   LocalDateToSystemDate:
-    prefix: "ldtsd"
+    prefix: "LocalDateToSystemDate"
     body: "LocalDateToSystemDate(${1})"
   LongSFID:
-    prefix: "lsfid"
+    prefix: "LongSFID"
     body: '''
       LongSFID(${1:15-character SFID to convert})
-      
+
     '''
   Lookup:
-    prefix: "lu"
+    prefix: "Lookup"
     body: "Lookup(\"${1:Data Extension Name}\",\"${2:Return Column}\",\"${3:Match Column}\",${4:Value to Match})"
   LookupOrderedRows:
-    prefix: "luo"
+    prefix: "LookupOrderedRows"
     body: "LookupOrderedRows(\"${1:Data Extension Name}\",${2:Number of rows to return},\"${3:Order clause asc|desc}\",\"${4:Column to match}\",${5:Value to match})"
   LookupRows:
-    prefix: "lur"
+    prefix: "LookupRows"
     body: "LookupRows(\"${1:Data Extension Name}\",\"${2:Column of rows to return}\",${3:Value to match})"
   Lowercase:
-    prefix: "lc"
+    prefix: "Lowercase"
     body: "Lowercase(${1:Value to return})"
   MD5:
     prefix: "md5"
     body: "MD5(${1})"
   member_country:
-    prefix: "s"
+    prefix: "member_country"
     body: "member_country"
   memberid:
-    prefix: "s"
+    prefix: "memberid"
     body: "memberid"
   member_postalcode:
-    prefix: "s"
+    prefix: "member_postalcode"
     body: "member_postalcode"
   member_state:
-    prefix: "s"
+    prefix: "member_state"
     body: "member_state"
   member_addr:
-    prefix: "s"
+    prefix: "member_addr"
     body: "member_addr"
   member_busname:
-    prefix: "s"
+    prefix: "member_busname"
     body: "member_busname"
   member_city:
-    prefix: "s"
+    prefix: "member_city"
     body: "member_city"
   Mod:
-    prefix: "mo"
+    prefix: "Mod"
     body: "Mod(${1:The dividend},${2:The divisor})"
   Multiply:
-    prefix: "mu"
+    prefix: "Multiply"
     body: "Multiply(${1:First factor},${2:Second factor})"
   Now:
-    prefix: "n"
+    prefix: "Now"
     body: "Now()"
   Output:
-    prefix: "o"
+    prefix: "Output"
     body: "Output(${1:Content to be placed in block})"
   OutputLine:
-    prefix: "ol"
+    prefix: "OutputLine"
     body: "OutputLine(${1:Content to be placed in block})"
   profile_center_url:
-    prefix: "s"
+    prefix: "profile_center_url"
     body: "profile_center_url"
   ProperCase:
-    prefix: "pc"
+    prefix: "ProperCase"
     body: "ProperCase(${1:String})"
   QueryParameter:
-    prefix: "qp"
+    prefix: "QueryParameter"
     body: "QueryParameter(${1:Parameter to pull value})"
   RaiseError:
-    prefix: "re"
+    prefix: "RaiseError"
     body: "RaiseError(\"${1:Error message}\",${2:Stop send to subscriber true|false})"
   Random:
-    prefix: "ran"
+    prefix: "Random"
     body: "Random(${1:Low integer},${2:High integer})"
   Redirect:
-    prefix: "red"
+    prefix: "Redirect"
     body: "Redirect(${1:URL to redirect})"
   RedirectTo:
-    prefix: "redt"
+    prefix: "RedirectTo"
     body: "RedirectTo(${1:URL to redirect})"
   Replace:
-    prefix: "rep"
+    prefix: "Replace"
     body: "Replace(${1:Variable to replace},\"${2:String to replace}\",\"${3:String to replace '$2'}\")"
   ReplaceList:
-    prefix: "repl"
+    prefix: "ReplaceList"
     body: "ReplaceList(${1:Variable|string to replace},\"${2:Replacement string}\",\"${3:Value to replace'$2'}\")"
   replyemailaddress:
-    prefix: "s"
+    prefix: "replyemailaddress"
     body: "replyemailaddress"
   replyname:
-    prefix: "s"
+    prefix: "replyname"
     body: "replyname"
   RequestParameter:
-    prefix: "rp"
+    prefix: "RequestParameter"
     body: "RequestParameter(${1:Parameter to request})"
   RetrieveMscrmRecords:
-    prefix: "msrr"
+    prefix: "RetrieveMscrmRecords"
     body: "RetrieveMscrmRecords(${1:Name of MSCRM entity},${2:CSV list of record GUIDs to update},${3:Field to check value of},${4:Operator},${5:Value})"
   RetrieveMscrmRecordsFetchXML:
-    prefix: "msrxml"
+    prefix: "RetrieveMscrmRecordsFetchXML"
     body: "RetrieveMscrmRecordsFetchXML(${1:XML query})"
   RetrieveSalesforceJobSources:
-    prefix: "rsjs"
+    prefix: "RetrieveSalesforceJobSources"
     body: "RetrieveSalesforceJobSources(${1:ETJobID})"
   RetrieveSalesforceObjects:
-    prefix: "rso"
+    prefix: "RetrieveSalesforceObjects"
     body: "RetrieveSalesforceObjects(${1:Object type},${2:Fields to retrieve},${3:Field name for match},${4:Field value for match})"
   Row:
-    prefix: "r"
+    prefix: "Row"
     body: "Row(${1:The rowset},${2:Count of row to return})"
   RowCount:
-    prefix: "rc"
+    prefix: "RowCount"
     body: "RowCount(${1:Rowset to count})"
   SET:
-    prefix: "se"
+    prefix: "SET"
     body: "SET @${1:Variable} = $0"
   SetObjectProperty:
-    prefix: "sop"
+    prefix: "SetObjectProperty"
     body: "SetObjectProperty(${1:API Object},${2:Name of property},${3:Value of property})"
   SetSmsConversationNextKeyword:
-    prefix: "ssms"
+    prefix: "SetSmsConversationNextKeyword"
     body: "SetSmsConversationNextKeyword(\"${1:Short code}\",${2:Mobile number},${3:Keyword for next conversation})"
   SetStateMscrmRecord:
-    prefix: "msssr"
+    prefix: "SetStateMscrmRecord"
     body: "SetStateMscrmRecord(${1:GUID of record to set},${2:MSCRM entity name},${3:State Active|Inactive},${4:Status 0|1})"
   StringToDate:
-    prefix: "std"
+    prefix: "StringToDate"
     body: "StringToDate(${1})"
   subscriberid:
-    prefix: "s"
+    prefix: "subscriberid"
     body: "subscriberid"
   subscription_center_url:
-    prefix: "s"
+    prefix: "subscription_center_url"
     body: "subscription_center_url"
   Substring:
-    prefix: "ss"
+    prefix: "Substring"
     body: "Substring(${1:String to return a portion},${2:Character to start},${3:Character to end})"
   Subtract:
-    prefix: "su"
+    prefix: "Subtract"
     body: "Subtract(${1:Number from which to subtract N2},${2:Number to subtract from '$1'})"
   SystemDateToLocalDate:
-    prefix: "sdtld"
+    prefix: "SystemDateToLocalDate"
     body: "SystemDateToLocalDate(${1})"
   TreatAsContent:
-    prefix: "tac"
+    prefix: "TreatAsContent"
     body: "TreatAsContent(${1:String to return})"
   Trim:
-    prefix: "t"
+    prefix: "Trim"
     body: "Trim(${1:String to trim white space})"
   unsub_center_url:
-    prefix: "s"
+    prefix: "unsub_center_url"
     body: "unsub_center_url"
   UpdateData:
-    prefix: "ud"
+    prefix: "UpdateData"
     body: "UpdateData(\"${1:Data Extension name}\",${2:Number of columns},${3:Column name for WHERE},${4:Column value for WHERE},${5:Column name for INSERT},${6:Column value for INSERT})"
   UpdateDE:
-    prefix: "ude"
+    prefix: "UpdateDE"
     body: "UpdateDE(\"${1:Data Extension name}\",${2:Number of columns},${3:Column name for WHERE},${4:Column value for WHERE},${5:Column name for INSERT},${6:Column value for INSERT})"
   UpdateMscrmRecords:
-    prefix: "msup"
+    prefix: "UpdateMscrmRecords"
     body: "UpdateMscrmRecords(${1:Name of MSCRM entity},${2:CSV list of record GUIDs to update},${3:Name to update},${4:Value to update})"
   UpdateSingleSalesforceObject:
-    prefix: "usso"
+    prefix: "UpdateSingleSalesforceObject"
     body: "UpdateSingleSalesforceObject(${1:Type of object},${2:ID of object},${3:Name of field},${4:Value to update field})"
   UpdateTwitterStatus:
-    prefix: "uts"
+    prefix: "UpdateTwitterStatus"
     body: "UpdateTwitterStatus(${1})"
   UpdateTwitterStatusByJob:
-    prefix: "utsbj"
+    prefix: "UpdateTwitterStatusByJob"
     body: "UpdateTwitterStatusByJob(${1})"
   Uppercase:
-    prefix: "u"
+    prefix: "Uppercase"
     body: "Uppercase(${1:Value to return uppercase})"
   UpsertData:
-    prefix: "usd"
+    prefix: "UpsertData"
     body: "UpsertData(\"${1:Data Extension name}\",${2:Number of columns},${3:Column name for WHERE},${4:Column value for WHERE},${5:Column name for INSERT},${6:Column value for INSERT})"
   UpsertDE:
-    prefix: "usde"
+    prefix: "UpsertDE"
     body: "UpsertDE(\"${1:Data Extension name}\",${2:Number of columns},${3:Column name for WHERE},${4:Column value for WHERE},${5:Column name for INSERT},${6:Column value for INSERT})"
   UpsertMscrmRecord:
-    prefix: "msups"
+    prefix: "UpsertMscrmRecord"
     body: "UpsertMscrmRecord(${1:Name of MSCRM entity to upsert},${2:Field used to sort the retrieve results},${3:Order to sort ASC|DSC},${4:Number of name/value pairs},${5:Name of attribute to filter},${6:Value of attribute to filter},${7:Name of attribute to update},${8:Value of attribute to update})"
   URLEncode:
-    prefix: "ue"
+    prefix: "URLEncode"
     body: "URLEncode(${1:URL})"
   V:
     prefix: "v"
     body: "V(${1:Value to ouput})"
   view_email_url:
-    prefix: "s"
+    prefix: "view_email_url"
     body: "view_email_url"
   WAT:
     prefix: "wat"
     body: "WAT(${1:String to match},${2:Value to replace})"
   WrapLongURL:
-    prefix: "wlu"
+    prefix: "WrapLongURL"
     body: "WrapLongURL(\"${1:URL to be wrapped}\")"
   xtday:
-    prefix: "s"
+    prefix: "xtday"
     body: "xtday"
   xtdayofweek:
-    prefix: "s"
+    prefix: "xtdayofweek"
     body: "xtdayofweek"
   xtlongdate:
-    prefix: "s"
+    prefix: "xtlongdate"
     body: "xtlongdate"
   xtmonth:
-    prefix: "s"
+    prefix: "xtmonth"
     body: "xtmonth"
   xtmonthnumeric:
-    prefix: "s"
+    prefix: "xtmonthnumeric"
     body: "xtmonthnumeric"
   xtshortdate:
-    prefix: "s"
+    prefix: "xtshortdate"
     body: "xtshortdate"
   xtyear:
-    prefix: "s"
+    prefix: "xtyear"
     body: "xtyear"
   _EmailID:
-    prefix: "s"
+    prefix: "_EmailID"
     body: "_EmailID"
   _ImpressionRegionID:
-    prefix: "s"
+    prefix: "_ImpressionRegionID"
     body: "_ImpressionRegionID"
   _ImpressionRegionName:
-    prefix: "s"
+    prefix: "_ImpressionRegionName"
     body: "_ImpressionRegionName"
   _IsTestSend:
-    prefix: "s"
+    prefix: "_IsTestSend"
     body: "_IsTestSend"
   _JobSubscriberBatchID:
-    prefix: "s"
+    prefix: "_JobSubscriberBatchID"
     body: "_JobSubscriberBatchID"
   _ListName:
-    prefix: "s"
+    prefix: "_ListName"
     body: "_ListName"
   _messagecontext:
-    prefix: "s"
+    prefix: "_messagecontext"
     body: "_messagecontext"
   _messagetypepreference:
-    prefix: "s"
+    prefix: "_messagetypepreference"
     body: "_messagetypepreference"
   _replycontent:
-    prefix: "s"
+    prefix: "_replycontent"
     body: "_replycontent"
   _subscriberkey:
-    prefix: "s"
+    prefix: "_subscriberkey"
     body: "_subscriberkey"
