@@ -66,6 +66,12 @@
       BuildRowSetFromXML(${1:XML},${2:Xpath},${3:Rowset error 0|1})
 
     '''
+  ClaimRow:
+    prefix: 'ClaimRow'
+    body: "ClaimRow('${1:Data_extension}', '${2:identify_claimed_row}', '${3:name_of_key_column}', '${4:value_of_key_column}')"
+  ClaimRowValue:
+    prefix: 'ClaimRowValue'
+    body: "ClaimRowValue('${1:Data_extension}','VOUCHER_CODE','ASSIGNED','False','CUSTOMER_ID',_subscriberkey')"
   Comment:
     prefix: "Comment"
     body: '''
@@ -90,6 +96,9 @@
   ContentBlockbyId:
     prefix: 'ContentBlockbyId'
     body: "ContentBlockbyId(${1:ID})"
+  ContentBlockbyName:
+    prefix: 'ContentBlockbyName'
+    body: "ContentBlockbyName(${1:Content Builder\Weekly Portfolio})"
   CreateMscrmRecord:
     prefix: "CreateMscrmRecord"
     body: "CreateMscrmRecord(${1:Name of MSCRM entity},${2:Number of name/pairs},${3:Name to create},${4:Value to create})"
@@ -166,6 +175,9 @@
   Format:
     prefix: "Format"
     body: "Format(${1:Variable to format},${2:Format})"
+  FormatDate:
+    prefix: 'FormatDate'
+    body: 'FormatDate("2012-10-05 03:21:34.567890", "MMM DD, YYYY", "HH:MM:SS.MMM", "en-US")'
   ftaf_url:
     prefix: "ftaf_url"
     body: "ftaf_url"
