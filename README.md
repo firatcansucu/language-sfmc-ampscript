@@ -2,7 +2,7 @@
 
 Ampscript highlighting and autocomplete functionality for Atom.
 
-The documentation for the langague AMPscript can be found here https://developer.salesforce.com/docs/atlas.en-us.mc-programmatic-content.meta/mc-programmatic-content/index.htm
+Documentation for the AMPscript can be found here https://developer.salesforce.com/docs/atlas.en-us.mc-programmatic-content.meta/mc-programmatic-content/index.htm
 
 
 # Change log
@@ -12,5 +12,6 @@ The documentation for the langague AMPscript can be found here https://developer
 * v0.1.3 - Added several missing functions
 * v0.1.4 - Updated the README
 * v0.1.5 - Added code snippet - single line ampscript code block
+* v0.1.6 - Updated the README
 
 Originally converted from the TextMate bunlde https://github.com/whgfive/AMP-Bundle
