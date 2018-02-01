@@ -11,5 +11,6 @@ The documentation for the langague AMPscript can be found here https://developer
 * v0.1.2 - Changed the prefixes from shortcuts to words
 * v0.1.3 - Added several missing functions
 * v0.1.4 - Updated the README
+* v0.1.5 - Added code snippet - single line ampscript code block
 
 Originally converted from the TextMate bunlde https://github.com/whgfive/AMP-Bundle

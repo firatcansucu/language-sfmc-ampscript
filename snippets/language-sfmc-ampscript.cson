@@ -14,13 +14,16 @@
   AddObjectArrayItem:
     prefix: "AddObjectArrayItem"
     body: "AddObjectArrayItem(${1:O1},${2:S1},${3:S2})"
-  AMP:
+  AMPscriptMultipleLines:
     prefix: "amp"
     body: '''
       %%[
       	$0
       ]%%
     '''
+  AMPscriptSingleLine:
+    prefix: "amp"
+    body: "%%=$0=%%"
   AttachFile:
     prefix: "AttachFile"
     body: "AttachFile(${1:S1},${2:S2},${3:S3},${4:B1},${5:S4},${6:S5},${7:N1})"
